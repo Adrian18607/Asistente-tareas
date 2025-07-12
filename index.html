@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asistente de Tareas Inteligente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Asistente de Tareas Inteligente</h1>
+    
+    <label for="nivel">Nivel educativo:</label>
+    <select id="nivel">
+      <option value="primaria">Primaria</option>
+      <option value="secundaria">Secundaria</option>
+      <option value="universidad">Universidad</option>
+    </select>
+
+    <label for="tipo">Tipo de respuesta:</label>
+    <select id="tipo">
+      <option value="breve">Breve</option>
+      <option value="completa">Completa</option>
+    </select>
+
+    <label for="pregunta">Escribe tu pregunta:</label>
+    <textarea id="pregunta" rows="4"></textarea>
+
+    <button onclick="enviarPregunta()">Enviar</button>
+
+    <div id="respuesta"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
